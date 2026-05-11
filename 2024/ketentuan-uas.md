@@ -285,7 +285,8 @@ pada tim yang menang, nilai uts dan formatif akan disamakan pada nilai uas
 
 ---
 
-<img src=ghirlandaio/2024/bagan_uas.png alt="foto_bagan" width="300" height="200" > 
+<img src="2024/bagan_uas.png"  width="300" height="200">
+ 
 
 img {
   width: 100%; /* Scales to container width */
