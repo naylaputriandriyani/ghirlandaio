@@ -12,6 +12,7 @@ Al Muhdil Karim, S.IP, M.Hum.
 
 ## Pendahuluan
 *Latar Belakang*
+
 Arch Linux merupakan distribusi Linux yang menekankan pada prinsip kesederhanaan, modernitas, pragmatisme, terpusat pada pengguna, serta keserbagunaan dengan tujuan memberikan kebebasan kepada pengguna untuk mengatur sistem sesuai kebutuhan. Arch Linux mengutamakan sistem yang sederhana tanpa tambahan atau modifikasi yang tidak diperlukan sehingga pengguna dapat mengatur dan menyesuaikan sistem sesuai kebutuhan. Selain itu, Arch Linux menggunakan sistem rilis bergulir (rolling release) agar dalam sekali pemasangan dan terus diperbarui.
 
 Arch Linux dirancang untuk pengguna yang ingin memahami dan mengelola sistem operasi secara mandiri. Arch Linux menyediakan berkas konfigurasi berdasarkan pembuat atau pengurus asli perangkat lunak dengan tambahan perubahan yang spesifik pada sistem Arch Linux, seperti pengaturan path agar sistem dapat berjalan dengan baik dan tidak mengalami error. Konfigurasi tersebut juga tidak menambahkan fitur otomatis yang tidak diperlukan, seperti menyalakan layanan secara otomatis setelah paket terpasang, sehingga pengguna perlu mengatur dan menyalakan layanan sistem secara mandiri sesuai kebutuhan.
