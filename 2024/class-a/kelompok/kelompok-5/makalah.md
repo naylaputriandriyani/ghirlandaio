@@ -158,36 +158,7 @@ Untuk sistem UEFI, pasang partisi ke ```/mnt/boot```:
 
 **3.9 Install Bootloader**
 
-
-
 ### 4. Reboot
-
-## Praktik
-
-1. Persiapan Sebelum Instalasi
-a. Dapaktkan file ISO Arch Linux berikut link "archlinux.org/download/" pastikan sudah ada signature
-b. cek wifi
-
-b. partisi disk menggunakan mini partition wizard
-c. siapkan flashdisk minimal 8gb
-
-3. Masukan ISO ke flashdisk
-4. boot ke live environment
-5. pastikan masuk ke boot installer UEFI bukan BIOS
-6. Konek ke Internet
-7. Sinkronisasi waktu
-8. Partisi Disk
-9. Mount filesystem
-10. Instalasi sistem dasar
-11. Membuat Fstab
-12. masuk ke sistem boot
-13. mengatur timezone
-14. localization
-15. generate Initframs
-16. password
-17. install bootloader GRUB2
-18. Reboot
-
 
 ## Penutup
 
