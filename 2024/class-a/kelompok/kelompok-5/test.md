@@ -66,9 +66,7 @@ cari disk mana yang mau dipartisi
 masuk ke disk yang mau dipartisi
 disini disk yang mau saya partisi adalah ```nvme0n1```
 untuk format disk ketik ```fdisk```
-```
-fdisk /dev/nvme0n1
-```
+
 
 <img width="566" height="757" alt="image" src="https://github.com/user-attachments/assets/45b27646-d826-488b-b53a-48960bfde1ee" />
 
@@ -84,10 +82,28 @@ Device pertama adalah boot
 2. gunakan default number saja klik enter, misal ```nvme0n1p6```
 3. gunakan default yang kedua enter saja
 4. lalu tentukan berapa memory untuk boot sesuai panduan di arch wiki adalah 1G jadi ketik ```+1G```
+
+
 ubah tipe disknya
+
+
 1. lihat list tipe disk ```l```
 <img width="578" height="798" alt="image" src="https://github.com/user-attachments/assets/cd5a5bce-a0db-4d29-af3b-8f0165feb458" />
-2. 
+2. disini kita bisa lihat EFI System adalah nomor 1, tekan ```q``` untuk keluar
+3. tekan ```t``` lalu ketik ```6``` sesuai disk yang ingin kita ganti tipenya
+4. lalu masukan nomor tipe disk tujuan, ketik ```1``` untuk merubah linux filesystem (default) ke EFI System
+
+lalu buat partisi baru dan lakukan hal yang sama untuk device root dan linux swap
+
+misalnya nama devicenya adalah
+```fdisk /dev/nvme0n1p7``` untuk linux swap adalah 4G
+```fdisk /dev/nvme0n1p8``` untuk root adalah sisanya misalnya 95G
+
+lalu format disk
+
+
+
+
 https://wiki.archlinux.org/title/Partitioning#Example_layouts
 
 ## Format partisi
