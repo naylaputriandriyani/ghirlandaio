@@ -173,9 +173,9 @@ Generate local: locale-gen
 Penjelasan 
 digunakan untuk memproses data bahasa yang dipilih 
 ### Hostname 
-Hostname merupakan nama komputer di jaringan 
+Hostname merupakan nama komputer `nvim /etc/hostname`
 Klik i masukan nama komputer, klik esc klik :wq 
-`nvim /etc/hostname`
+
 ### Generate Initramfs 
 `mkinitcpio -P`
 Penjelasan 
