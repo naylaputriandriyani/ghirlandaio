@@ -63,31 +63,31 @@ ikuti sesuai type kalian apakah sda atau nvme0n1
 ## me mounting point 
 ### mounting partisi bentuk nvmeon1
 mount /dev/nvme0n1p3 /mnt <br>
-untuk me mount partisi root alias /mnt 
+untuk me mount partisi root alias /mnt <br> 
 mount --mkdir /dev/nvme0n1p1 /mnt/boot <br>
-untuk me mount partisi ke boot nantinya 
+untuk me mount partisi ke boot nantinya <br> 
 swapon /dev/nvme0n1p2  <br>
-untuk mengaktifkan fungsi swap 
+untuk mengaktifkan fungsi swap <br>
 
 setelah format dan mounting berhasil ketik 
 
 ## pacstrap
-pacstrap -K /mnt intel-ucode base base-devel linux linux-firmware git neovim iwd
-pacstrap -K /mnt amd-ucode base base-devel linux linux-firmware git neovim iwd
+pacstrap -K /mnt intel-ucode base base-devel linux linux-firmware git neovim iwd <br> 
+pacstrap -K /mnt amd-ucode base base-devel linux linux-firmware git neovim iwd <br> 
 
-pakai intel untuk intel, pakai amd untuk amd , ini di tentukan prosessor kalian, ini service untuk bug dan semacamnya 
+pakai intel untuk intel, pakai amd untuk amd , ini di tentukan prosessor kalian, ini service, entential pacages dan berisi base dari Arch-Linux 
 
 ## fstab
-fstab -U /mnt >> /mnt/etc/fstab
-fungsinya untuk menyiapkkan file yang sudah di mount tadi
+fstab -U /mnt >> /mnt/etc/fstab <br> 
+fungsinya untuk menyiapkkan file yang sudah di mount tadi <br> 
 
 ## arch-crhoot /mnt 
-masuk ke root dengan mengetik ini 
-arch-chroot /mnt 
+masuk ke root dengan mengetik ini <br> 
+arch-chroot /mnt <br> 
 
 menyesuaikan waktu 
-ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
-hwclock --systohc 
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime <br> 
+hwclock --systohc <br> 
 
 ini untuk menyesuaikan waktu dan jam agar tersinkronniasasi 
 
