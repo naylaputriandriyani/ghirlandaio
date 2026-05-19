@@ -64,8 +64,16 @@ cari disk mana yang mau dipartisi
 <img width="1920" height="1080" alt="Desain tanpa judul (2)" src="https://github.com/user-attachments/assets/f5f13826-fd86-4c1d-98d2-b6cf1a5f208e" />
 
 masuk ke disk yang mau dipartisi
-disini disk yang mau saya partisi adalah ```
+disini disk yang mau saya partisi adalah ```nvme0n1```
+untuk format disk ketik ```fdisk```
+```
+fdisk /dev/nvme0n1
+```
 
+<img width="566" height="757" alt="image" src="https://github.com/user-attachments/assets/45b27646-d826-488b-b53a-48960bfde1ee" />
+1. ubah mode partisi dari MBR menggunakan GPT menggunakan ```g```
+2. cek berapa free disk yang sudah disiapkan untuk arch linux dengan tombol '''
+3. 
 sesuaikan dengan layout ini
 <img width="937" height="271" alt="image" src="https://github.com/user-attachments/assets/0ae7bdc3-e491-449b-976c-05096373697e" />
 
