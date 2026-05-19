@@ -81,22 +81,16 @@ Device pertama adalah boot
 
 
 1. ketik ```n``` untuk membuat partisi baru
-
-
 2. gunakan default number saja klik enter, misal ```nvme0n1p6```
-
-
 3. gunakan default yang kedua enter saja
-
-
 4. lalu tentukan berapa memory untuk boot sesuai panduan di arch wiki adalah 1G jadi ketik ```+1G```
 
 
 ubah tipe disknya
 
+<img width="578" height="798" alt="image" src="https://github.com/user-attachments/assets/cd5a5bce-a0db-4d29-af3b-8f0165feb458" />
 
 1. lihat list tipe disk ```l```
-<img width="578" height="798" alt="image" src="https://github.com/user-attachments/assets/cd5a5bce-a0db-4d29-af3b-8f0165feb458" />
 2. disini kita bisa lihat EFI System adalah nomor 1, tekan ```q``` untuk keluar
 3. tekan ```t``` lalu ketik ```6``` sesuai disk yang ingin kita ganti tipenya
 4. lalu masukan nomor tipe disk tujuan, ketik ```1``` untuk merubah linux filesystem (default) ke EFI System
