@@ -468,19 +468,21 @@ pacman -S neovim
 ```
 lalu:
 ```bash
+ nvim /etc/locale.gen
+```
+terus uncommenting #en_US.UTF-8
+(Pagarnya yang dihapus) 
+
+```bash
  locale-gen
 ```
 Dan di lanjutkan dengan:
 ```bash
-nvim /etc/locale.conf
+locale > /etc/locale.conf
 ```
 
----
-
-
-Pencet key I pada keyboard dan masukkan perintah ini:
 ```bash
-LANG=en_US.UTF-8
+nvim /etc/locale.conf
 ```
 
 ---
@@ -492,9 +494,9 @@ Setelah sudah terisi, tekan key __escape__ pada keyboard dan ketik `:wq`
 
 # Hostname
 
-untuk membuat __Hostname__, ketik:
+untuk membuat __Useradd__, ketik:
 ```bash
-nvim /etc/hostname
+useradd -m (nama user) 
 ```
 
 ---
@@ -503,25 +505,11 @@ nvim /etc/hostname
 Selanjutnya, Insert lagi dan masukkan nama hostname yang diinginkan. 
 
 Contoh: __"Luthfi"__
-- nvim /etc/Luthfi
+- useradd -m Luthfi
 
 
 ### Penjelasan
-__Hostname__ adalah nama yang digunakan untuk mengidentifikasi perangkat di jaringan.
-
-
----
-
-
-# Generate Initramfs
-
-Untuk menhasilkan __Initramfs__ (Initial RAM File System) ketik:
-```bash
-mkinitcpio -P
-```
-
-### Penjelasan
-Ini digunakan untuk membuat image boot awal Linux.
+__useradd__ adalah nama yang digunakan untuk mengidentifikasi perangkat di jaringan.
 
 
 ---
@@ -531,7 +519,7 @@ Ini digunakan untuk membuat image boot awal Linux.
 
 Selanjutnya, ketik:
 ```bash
-passwd
+passwd (nama user) 
 ```
 
 ### Penjelasan
@@ -547,7 +535,7 @@ Langkah berikutnya adalah melakukan instalisasi `Bootloader` atau `GRUB`, GRUB (
 
 Ikuti langkah langkah ini untuk menginstall Bootloader (GRUB):
 ```bash
-pacman -S grub efibootmgr
+pacman -S grub efibootmgr os-plober
 ```
 
 ```bash
