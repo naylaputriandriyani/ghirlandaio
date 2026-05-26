@@ -87,3 +87,4 @@ network
 kitty
 <img width="1528" height="1528" alt="kitty = terminal" src="https://github.com/user-attachments/assets/eb85d73d-2f4d-4577-86bd-6e670ef6be1e" />
 
+## Alhamdulillah sudah selseai tetapi masih belum bisa install ulang (error) masih mencari cara install yang baik
